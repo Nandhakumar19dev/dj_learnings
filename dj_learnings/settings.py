@@ -134,14 +134,21 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # email setup 
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp-mail.outlook.com'
+# EMAIL_HOST_USER = 'nandhakumar_maint@hotmail.com'
+# print("you should set outlook password in below settings var")
+# EMAIL_HOST_PASSWORD = 'outlook-password'
+# EMAIL_PORT = 25
+
+# email sending from gmail 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'maintnandha@gmail.com'
+EMAIL_HOST_PASSWORD = 'xxxxyyyyzzzzhhhh' # app password 
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_HOST_USER = 'nandhakumar_maint@hotmail.com'
-print("you should set outlook password in below settings var")
-EMAIL_HOST_PASSWORD = 'outlook-password'
-EMAIL_PORT = 25
-
-
-
+EMAIL_USE_SSL = False
 
