@@ -55,7 +55,7 @@ ROOT_URLCONF = 'dj_learnings.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,4 +151,12 @@ EMAIL_HOST_PASSWORD = 'xxxxyyyyzzzzhhhh' # app password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+COINBASE_COMMERCE_API_KEY = '04fcc852' # actual key need to be replaced ....
+
+
+
+
+
+
 
